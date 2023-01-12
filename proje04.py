@@ -11,7 +11,7 @@ root = tk.Tk()
 root.title("Nesne Tanıma")
 root.geometry("1000x650")
 
-title = tk.Label(root, text="Neesne Tanıma uygulamasını kullanmak için resim seç butonuna tıklayınız.",background="light blue")
+title = tk.Label(root, text="Nesne Tanıma uygulamasını kullanmak için resim seç butonuna tıklayınız.",background="light blue")
 title.config(font=("Arial", 10))
 title.pack()
 
