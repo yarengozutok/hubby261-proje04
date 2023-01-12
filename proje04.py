@@ -56,7 +56,7 @@ def select_image():
     image = tf.image.resize(image, (299, 299))
     image = tf.keras.applications.inception_v3.preprocess_input(image)
 
-    # Öznitelikleri kullanarak hayvan türünü tahmin etme
+    # Öznitelikleri kullanarak nesne türünü tahmin etme
     prediction = model.predict(image[tf.newaxis, ...])
     prediction = tf.argmax(prediction, axis=-1)
     prediction_string = int(prediction)
