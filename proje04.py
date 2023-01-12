@@ -73,14 +73,14 @@ def select_image():
     # Nesne türlerine karşılık gelen dizeleri tanımla
     classes = ["airplane","automobile", "bird", "cat", "deer", "dog", "frog", "horse", "ship", "truck"]
 
-    # Tahmin edilen hayvan türünü bir dize olarak döndürmek için
+    # Tahmin edilen nesne türünü bir dize olarak döndürmek için
     prediction_string = classes[prediction]
 
     title2 = tk.Label(root, text="Tahminim", background="light blue")
     title2.config(font=("Arial", 10))
     title2.pack()
 
-    # Tahmin edilen hayvan türünü etiket olarak gösterme
+    # Tahmin edilen nesne türünü etiket olarak gösterme
     label = tk.Label(root, text=prediction_string)
     label.pack()
 
